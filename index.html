@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Google Calendar Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Google Calendar Event</h1>
+        <form id="eventForm">
+            <div class="form-group">
+                <label for="title">Event Title:</label>
+                <input type="text" id="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date (DD/MM/YYYY):</label>
+                <input type="text" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="start_time">Start Time (HH:MM):</label>
+                <input type="text" id="start_time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="end_time">End Time (HH:MM):</label>
+                <input type="text" id="end_time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location URL:</label>
+                <input type="text" id="location" required>
+            </div>
+
+            <button type="submit">Generate Event URL</button>
+            <p id="copyNotification" class="copy-notification"></p>
+        </form>
+
+        <p id="eventUrl"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
